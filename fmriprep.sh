@@ -26,6 +26,6 @@ for subj in $(cat $subjinfo); do
     --output-spaces MNI152NLin2009cAsym: res-native \
     --nthreads $nthreads \
     -w $workingdir
-    done
+done
 
 echo "Thank God! you went without errors in fMRIPrep!"
