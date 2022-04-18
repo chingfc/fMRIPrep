@@ -1,9 +1,9 @@
 #!/bin/sh
 set -o exiterr
 
-bidsdir=/bidsdir
-subjinfo=/
-fslicense=$FREESURFER_HOME/license.txt
+bidsdir=/put/bidsdir/here
+subjinfo=/put/subjinfo/here
+fslicense=$FREESURFER_HOME/license.txt # to make sure freesurfer had been installed.
 workingdir=$bidsdir/$(mkdir -p $bidsdir/fmriprep_wd; echo 'fmriprep_wd')
 subjs=$(cat $subjinfo | wc -l)
 nthreads=40
